@@ -23,6 +23,7 @@ app.use(morgan("dev"))
 app.use(express.json())
 app.use(express.urlencoded({ extended: true }))
 
+app.use("/auth", routes.auth)
 app.use("/characters", routes.characters)
 app.use("/houses", routes.houses)
 
